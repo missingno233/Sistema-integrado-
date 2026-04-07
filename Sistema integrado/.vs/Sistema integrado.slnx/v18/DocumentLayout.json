@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\gaelg\\source\\repos\\Sistema integrado\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\gaelg\\source\\repos\\sistema integrado\\sistema integrado\\ventanas\\ventanalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\ventanas\\ventanalog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\gaelg\\source\\repos\\sistema integrado\\sistema integrado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\gaelg\\source\\repos\\sistema integrado\\sistema integrado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\gaelg\\source\\repos\\sistema integrado\\sistema integrado\\models\\conexi\u00F3nbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\models\\conexi\u00F3nbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AB82D612-087A-477D-9AD8-76F0B4F7F7BA}|Sistema integrado\\Sistema integrado.csproj|C:\\Users\\gaelg\\source\\repos\\Sistema integrado\\sistema integrado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{AB82D612-087A-477D-9AD8-76F0B4F7F7BA}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\gaelg\\source\\repos\\Sistema integrado\\Sistema integrado\\Form1.cs",
+              "RelativeDocumentMoniker": "Sistema integrado\\Form1.cs",
+              "ToolTip": "C:\\Users\\gaelg\\source\\repos\\Sistema integrado\\Sistema integrado\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema integrado\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T18:10:18.309Z",
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VentanaLog.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\gaelg\\source\\repos\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaLog.cs",
+              "RelativeDocumentMoniker": "Sistema integrado\\Ventanas\\VentanaLog.cs",
+              "ToolTip": "C:\\Users\\gaelg\\source\\repos\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaLog.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema integrado\\Ventanas\\VentanaLog.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T18:38:26.401Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\gaelg\\source\\repos\\Sistema integrado\\Sistema integrado\\Form1.cs",
+              "RelativeDocumentMoniker": "Sistema integrado\\Form1.cs",
+              "ToolTip": "C:\\Users\\gaelg\\source\\repos\\Sistema integrado\\Sistema integrado\\Form1.cs",
+              "RelativeToolTip": "Sistema integrado\\Form1.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowBUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T18:11:33.955Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Conexi\u00F3nBD.cs",
+              "DocumentMoniker": "C:\\Users\\gaelg\\source\\repos\\Sistema integrado\\Sistema integrado\\Models\\Conexi\u00F3nBD.cs",
+              "RelativeDocumentMoniker": "Sistema integrado\\Models\\Conexi\u00F3nBD.cs",
+              "ToolTip": "C:\\Users\\gaelg\\source\\repos\\Sistema integrado\\Sistema integrado\\Models\\Conexi\u00F3nBD.cs",
+              "RelativeToolTip": "Sistema integrado\\Models\\Conexi\u00F3nBD.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T14:50:53.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\gaelg\\source\\repos\\Sistema integrado\\Sistema integrado\\Form1.cs",
+              "RelativeDocumentMoniker": "Sistema integrado\\Form1.cs",
+              "ToolTip": "C:\\Users\\gaelg\\source\\repos\\Sistema integrado\\Sistema integrado\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Sistema integrado\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-07T14:31:41.257Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
