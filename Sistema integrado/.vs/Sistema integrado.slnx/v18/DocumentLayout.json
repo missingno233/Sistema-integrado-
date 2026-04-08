@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\gaelg\\onedrive\\documentos\\github\\sistema-integrado-\\sistema integrado\\sistema integrado\\ventanas\\ventanacreareditar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\ventanas\\ventanacreareditar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\sistema integrado\\ventanas\\ventanacreareditar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\ventanas\\ventanacreareditar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\gaelg\\onedrive\\documentos\\github\\sistema-integrado-\\sistema integrado\\sistema integrado\\ventanas\\ventanacreareditar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\ventanas\\ventanacreareditar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\gaelg\\onedrive\\documentos\\github\\sistema-integrado-\\sistema integrado\\sistema integrado\\ventanas\\ventanamascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,7 +19,7 @@
       "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\ventanas\\ventanatutores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\gaelg\\onedrive\\documentos\\github\\sistema-integrado-\\sistema integrado\\sistema integrado\\ventanas\\ventanamascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\sistema integrado\\ventanas\\ventanamascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\ventanas\\ventanamascota.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -27,7 +27,7 @@
       "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\models\\conexi\u00F3nbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\gaelg\\onedrive\\documentos\\github\\sistema-integrado-\\sistema integrado\\sistema integrado\\ventanas\\ventanatutores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\sistema integrado\\ventanas\\ventanatutores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\ventanas\\ventanatutores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -56,7 +56,7 @@
               "RelativeDocumentMoniker": "Sistema integrado\\Ventanas\\VentanaTutores.cs",
               "ToolTip": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaTutores.cs",
               "RelativeToolTip": "Sistema integrado\\Ventanas\\VentanaTutores.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwBEAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T14:29:39.733Z",
               "EditorCaption": ""
@@ -69,14 +69,14 @@
               "RelativeDocumentMoniker": "Sistema integrado\\Ventanas\\VentanaMascota.cs",
               "ToolTip": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaMascota.cs",
               "RelativeToolTip": "Sistema integrado\\Ventanas\\VentanaMascota.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABwAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwBwAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T14:29:25.979Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "VentanaCrearEditar.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaCrearEditar.cs",
               "RelativeDocumentMoniker": "Sistema integrado\\Ventanas\\VentanaCrearEditar.cs",
@@ -88,13 +88,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "VentanaCrearEditar.cs",
               "DocumentMoniker": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaCrearEditar.cs",
               "RelativeDocumentMoniker": "Sistema integrado\\Ventanas\\VentanaCrearEditar.cs",
               "ToolTip": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaCrearEditar.cs",
               "RelativeToolTip": "Sistema integrado\\Ventanas\\VentanaCrearEditar.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAqwCwAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAwwFUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T01:36:36.964Z",
               "EditorCaption": ""
@@ -102,14 +102,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "VentanaMascota.cs [Dise\u00F1o]",
+              "Title": "VentanaMascota.cs [Design]",
               "DocumentMoniker": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaMascota.cs",
               "RelativeDocumentMoniker": "Sistema integrado\\Ventanas\\VentanaMascota.cs",
-              "ToolTip": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaMascota.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Sistema integrado\\Ventanas\\VentanaMascota.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaMascota.cs [Design]",
+              "RelativeToolTip": "Sistema integrado\\Ventanas\\VentanaMascota.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T14:42:33.276Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -127,14 +127,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "VentanaTutores.cs [Dise\u00F1o]",
+              "Title": "VentanaTutores.cs [Design]",
               "DocumentMoniker": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaTutores.cs",
               "RelativeDocumentMoniker": "Sistema integrado\\Ventanas\\VentanaTutores.cs",
-              "ToolTip": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaTutores.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Sistema integrado\\Ventanas\\VentanaTutores.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaTutores.cs [Design]",
+              "RelativeToolTip": "Sistema integrado\\Ventanas\\VentanaTutores.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T14:43:05.927Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",

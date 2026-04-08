@@ -37,6 +37,10 @@
             CBEspecie = new ComboBox();
             btnCancelar = new Button();
             btnAceptar = new Button();
+            lblEdicion = new Label();
+            txtTutorNombre = new TextBox();
+            txtTelefono = new TextBox();
+            txtDireccion = new TextBox();
             SuspendLayout();
             // 
             // txtNombre
@@ -85,7 +89,7 @@
             txtAlergias.Location = new Point(55, 242);
             txtAlergias.Margin = new Padding(4);
             txtAlergias.Name = "txtAlergias";
-            txtAlergias.PlaceholderText = "Alergias";
+            txtAlergias.PlaceholderText = "Alergia";
             txtAlergias.Size = new Size(127, 29);
             txtAlergias.TabIndex = 5;
             // 
@@ -126,11 +130,56 @@
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
             // 
+            // lblEdicion
+            // 
+            lblEdicion.AutoSize = true;
+            lblEdicion.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblEdicion.Location = new Point(36, 34);
+            lblEdicion.Name = "lblEdicion";
+            lblEdicion.Size = new Size(343, 37);
+            lblEdicion.TabIndex = 10;
+            lblEdicion.Text = "Edite los datos del paciente";
+            lblEdicion.Click += label1_Click;
+            // 
+            // txtTutorNombre
+            // 
+            txtTutorNombre.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtTutorNombre.Location = new Point(142, 120);
+            txtTutorNombre.Margin = new Padding(4);
+            txtTutorNombre.Name = "txtTutorNombre";
+            txtTutorNombre.PlaceholderText = "Nombre";
+            txtTutorNombre.Size = new Size(127, 29);
+            txtTutorNombre.TabIndex = 11;
+            // 
+            // txtTelefono
+            // 
+            txtTelefono.Font = new Font("Segoe UI", 12F);
+            txtTelefono.Location = new Point(142, 180);
+            txtTelefono.Margin = new Padding(4);
+            txtTelefono.Name = "txtTelefono";
+            txtTelefono.PlaceholderText = "Telefono";
+            txtTelefono.Size = new Size(127, 29);
+            txtTelefono.TabIndex = 12;
+            // 
+            // txtDireccion
+            // 
+            txtDireccion.Font = new Font("Segoe UI", 12F);
+            txtDireccion.Location = new Point(142, 242);
+            txtDireccion.Margin = new Padding(4);
+            txtDireccion.Name = "txtDireccion";
+            txtDireccion.PlaceholderText = "Direccion";
+            txtDireccion.Size = new Size(127, 29);
+            txtDireccion.TabIndex = 13;
+            // 
             // VentanaCrearEditar
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(434, 411);
+            Controls.Add(txtDireccion);
+            Controls.Add(txtTelefono);
+            Controls.Add(txtTutorNombre);
+            Controls.Add(lblEdicion);
             Controls.Add(btnAceptar);
             Controls.Add(btnCancelar);
             Controls.Add(CBEspecie);
@@ -159,5 +208,9 @@
         private ComboBox CBEspecie;
         private Button btnCancelar;
         private Button btnAceptar;
+        private Label lblEdicion;
+        private TextBox txtTutorNombre;
+        private TextBox txtTelefono;
+        private TextBox txtDireccion;
     }
 }
