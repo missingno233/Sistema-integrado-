@@ -1,3 +1,5 @@
+using Sistema_integrado.Ventanas;
+
 namespace Sistema_integrado
 {
     internal static class Program
@@ -11,7 +13,7 @@ namespace Sistema_integrado
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+            Application.Run(new VentanaPrincipal());
         }
     }
 }
