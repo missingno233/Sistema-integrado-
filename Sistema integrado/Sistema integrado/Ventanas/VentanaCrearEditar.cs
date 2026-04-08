@@ -11,13 +11,16 @@ namespace Sistema_integrado.Ventanas
 {
     public partial class VentanaCrearEditar : Form
     {
-        Paciente paciente = new();
+        Paciente elias = new();
+
         Tutor tutor = new();
 
         public VentanaCrearEditar(Paciente paciente)
         {
             InitializeComponent();
-            this.paciente = paciente;
+            this.elias = paciente;
+
+            txtAlergias.Hide();
         }
         public VentanaCrearEditar(Tutor tutor)
         {
@@ -26,17 +29,22 @@ namespace Sistema_integrado.Ventanas
         }
 
 
-        public VentanaCrearEditar(string nombre, string especie, 
-            string raza, int edad, double peso)
+        public void cargarPaciente()
         {
-            InitializeComponent();
-            txtNombre.Text = nombre;
-            CBEspecie.Text = especie;
-            txtRaza.Text = raza;
-            txtEdad.Text = edad.ToString();
-            txtPeso.Text = peso.ToString();
-
+            txtNombre.Text = elias.Nombre;
+            CBEspecie.Text = elias.Especie;
+            txtRaza.Text = elias.Raza;
+            txtEdad.Text = elias.Edad.ToString();
+            txtPeso.Text = elias.Peso.ToString();
         }
+
+        public void cargarTutor()
+        {
+            txtNombre.Text = tutor.Nombre;
+            txtRaza.Text = tutor.Direccion;
+            txtEdad.Text = tutor.Telefono;
+            
+        }               
 
 
     }

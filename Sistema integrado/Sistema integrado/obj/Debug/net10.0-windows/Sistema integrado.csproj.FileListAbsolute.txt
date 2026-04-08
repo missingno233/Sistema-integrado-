@@ -58,3 +58,63 @@ C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\
 C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.pdb
 C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.genruntimeconfig.cache
 C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\ref\Sistema integrado.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.csproj.AssemblyReference.cache
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.Properties.Resources.resources
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.VentanaPrincipal.resources
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.Ventanas.VentanaBuscar.resources
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.Ventanas.VentanaCrearEditar.resources
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.VentanaMascota.resources
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.Ventanas.VentanaTutores.resources
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.csproj.GenerateResource.cache
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.AssemblyInfoInputs.cache
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.AssemblyInfo.cs
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.csproj.CoreCompileInputs.cache
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.sourcelink.json
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\refint\Sistema integrado.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.pdb
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Sistema integrado.exe
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Sistema integrado.deps.json
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Sistema integrado.runtimeconfig.json
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Sistema integrado.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Sistema integrado.pdb
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.Bcl.Cryptography.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.Extensions.Abstractions.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.Data.SqlClient.Internal.Logging.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\Microsoft.SqlServer.Server.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\cs\Microsoft.Data.SqlClient.resources.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\de\Microsoft.Data.SqlClient.resources.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\es\Microsoft.Data.SqlClient.resources.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\fr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\it\Microsoft.Data.SqlClient.resources.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\ja\Microsoft.Data.SqlClient.resources.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\ko\Microsoft.Data.SqlClient.resources.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\pl\Microsoft.Data.SqlClient.resources.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\pt-BR\Microsoft.Data.SqlClient.resources.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\ru\Microsoft.Data.SqlClient.resources.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\tr\Microsoft.Data.SqlClient.resources.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\zh-Hans\Microsoft.Data.SqlClient.resources.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\zh-Hant\Microsoft.Data.SqlClient.resources.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\runtimes\unix\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\runtimes\win\lib\net9.0\Microsoft.Data.SqlClient.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\bin\Debug\net10.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema .AD4A545B.Up2Date
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.genruntimeconfig.cache
+C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\ref\Sistema integrado.dll

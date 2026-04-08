@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using Sistema_integrado.Models;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,6 +12,7 @@ namespace Sistema_integrado.Ventanas
 {
     public partial class VentanaTutores : Form
     {
+        private Tutor tutor = new();
         private String consulta = "";
         Models.ConexionBD BD = new();
         private int idseleccionado = 0;
@@ -39,7 +41,7 @@ namespace Sistema_integrado.Ventanas
 
         private void TSB_Crear_Click(object sender, EventArgs e)
         {
-            VentanaCrearEditar ventana = new();
+            VentanaCrearEditar ventana = new(tutor);
             ventana.ShowDialog();
         }
 
@@ -50,7 +52,8 @@ namespace Sistema_integrado.Ventanas
 
         private void TSB_Editar_Click(object sender, EventArgs e)
         {
-
+            VentanaCrearEditar ventana = new(tutor);
+            ventana.ShowDialog();
         }
 
         private void TSB_Eliminar_Click(object sender, EventArgs e)

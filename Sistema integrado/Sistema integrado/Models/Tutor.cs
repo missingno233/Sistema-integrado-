@@ -7,8 +7,8 @@ namespace Sistema_integrado.Models
 {
     public class Tutor
     {
-        private string Nombre { get; set; }
-        private string Telefono { get; set; }
-        private string Direccion { get; set; }
+        public string Nombre { get; set; }
+        public string Telefono { get; set; }
+        public string Direccion { get; set; }
     }
 }

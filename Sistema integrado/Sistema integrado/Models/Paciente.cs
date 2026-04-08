@@ -8,12 +8,12 @@ namespace Sistema_integrado.Models
 {
     public class Paciente
     {
-        private String Nombre { get; set; }
-        private String Especie { get; set; }
-        private String Raza { get; set; }
-        private int Edad { get; set; }
-        private double Peso { get; set; }
+        public String Nombre { get; set; }
+        public String Especie { get; set; }
+        public String Raza { get; set; }
+        public int Edad { get; set; }
+        public double Peso { get; set; }
+        public bool porSiAcaso { get; set; }
 
-        private bool porSiAcaso { get; set; }
     }
 }

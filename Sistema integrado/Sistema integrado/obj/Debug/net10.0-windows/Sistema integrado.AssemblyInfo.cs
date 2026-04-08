@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Sistema integrado")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a928d0bccf84a860ebb6ba2e12e62021bd2cfb64")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39bb3696efd93588de524bc9520a4e492310ed14")]
 [assembly: System.Reflection.AssemblyProductAttribute("Sistema integrado")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Sistema integrado")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

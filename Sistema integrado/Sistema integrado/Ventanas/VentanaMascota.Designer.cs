@@ -33,9 +33,9 @@
             TSB_Consulta = new ToolStripButton();
             TSB_Editar = new ToolStripButton();
             TSB_Eliminar = new ToolStripButton();
-            dataGridView1 = new DataGridView();
+            DGVMascotas = new DataGridView();
             toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)DGVMascotas).BeginInit();
             SuspendLayout();
             // 
             // toolStrip1
@@ -85,26 +85,26 @@
             TSB_Eliminar.Text = "Eliminar";
             TSB_Eliminar.Click += TSB_Eliminar_Click;
             // 
-            // dataGridView1
+            // DGVMascotas
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(10, 37);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(832, 467);
-            dataGridView1.TabIndex = 1;
+            DGVMascotas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVMascotas.Location = new Point(10, 37);
+            DGVMascotas.Name = "DGVMascotas";
+            DGVMascotas.Size = new Size(832, 467);
+            DGVMascotas.TabIndex = 1;
             // 
             // VentanaMascota
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(854, 516);
-            Controls.Add(dataGridView1);
+            Controls.Add(DGVMascotas);
             Controls.Add(toolStrip1);
             Name = "VentanaMascota";
             Text = "Mascotas";
             toolStrip1.ResumeLayout(false);
             toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)DGVMascotas).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -116,6 +116,6 @@
         private ToolStripButton TSB_Editar;
         private ToolStripButton TSB_Crear;
         private ToolStripButton TSB_Eliminar;
-        private DataGridView dataGridView1;
+        private DataGridView DGVMascotas;
     }
 }
