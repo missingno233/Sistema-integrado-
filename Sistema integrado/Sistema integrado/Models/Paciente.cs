@@ -13,6 +13,7 @@ namespace Sistema_integrado.Models
         public String Raza { get; set; }
         public int Edad { get; set; }
         public double Peso { get; set; }
+        public string consulta { get; set; }
 
     }
 }

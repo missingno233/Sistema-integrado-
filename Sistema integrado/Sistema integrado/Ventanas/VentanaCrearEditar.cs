@@ -67,14 +67,12 @@ namespace Sistema_integrado.Ventanas
             txtEdad.Text = elias.Edad.ToString();
             txtPeso.Text = elias.Peso.ToString();
         }
-
         public void cargarTutor()
         {
             txtNombre.Text = tutor.Nombre;
             txtRaza.Text = tutor.Direccion;
             txtEdad.Text = tutor.Telefono;
         }
-
         public void cargarCreacionPaciente()
         {
             txtNombre.Visible = true;
@@ -97,7 +95,6 @@ namespace Sistema_integrado.Ventanas
             lblTitulo.Visible = false;
             lblEdicion.Visible = true;
         }
-
         public void cargarCreacionTutor()
         {
             txtTutorNombre.Visible = true;
@@ -112,7 +109,6 @@ namespace Sistema_integrado.Ventanas
             txtTelefono.Visible = true;
             lblEdicionTutor.Visible = true;
         }
-
         public void paginaPredeterminada()
         {
             //pacientes
@@ -154,16 +150,44 @@ namespace Sistema_integrado.Ventanas
 
         private void btnAceptar_Click(object sender, EventArgs e)
         {
-            if (ValidarCampos(out string mensajeError))
+            switch (Tipo)
             {
-                elias.Nombre = txtNombre.Text.Trim();
-                elias.Raza = txtRaza.Text.Trim();
-                elias.Especie = CBEspecie.SelectedItem?.ToString()?.Trim();
-                elias.Peso = double.Parse(txtPeso.Text.Trim());
-                elias.Edad = int.Parse(txtEdad.Text.Trim());
+                default:
+                    break;
+                case "Paciente":
+                    if (ValidarCampos(out string mensajeError))
+                    {
+                        elias.Nombre = txtNombre.Text.Trim();
+                        elias.Raza = txtRaza.Text.Trim();
+                        elias.Especie = CBEspecie.SelectedItem?.ToString()?.Trim();
+                        elias.Peso = double.Parse(txtPeso.Text.Trim());
+                        elias.Edad = int.Parse(txtEdad.Text.Trim());
 
-                MessageBox.Show("salvado", "Éxito", MessageBoxButtons.OK, 
-                    MessageBoxIcon.Information);
+                        MessageBox.Show("salvado", "Éxito", MessageBoxButtons.OK, 
+                            MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show(mensajeError, "Error", MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                    }
+                    break;
+                case "Tutor":
+                    if (ValidarCampos(out string pacienteError))
+                    {
+                        txtTutorNombre.Text = tutor.Nombre.Trim();
+                        txtTelefono.Text = tutor.Telefono.Trim();
+                        txtDireccion.Text = tutor.Direccion.Trim();
+
+                        MessageBox.Show("salvado", "Éxito", MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show(pacienteError, "Error", MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                    }
+                    break;
             }
         }
 
@@ -189,19 +213,16 @@ namespace Sistema_integrado.Ventanas
                 mensajeError = "La edad debe ser un número válido mayor o igual a 0";
                 return false;
             }
-
             if (CBEspecie.SelectedItem == null)
             {
                 mensajeError = "Por favor seleccione la especie";
                 return false;
             }
-
             if (string.IsNullOrWhiteSpace(txtPeso.Text))
             {
                 mensajeError = "Por favor ingrese el peso";
                 return false;
             }
-
             if (!double.TryParse(txtPeso.Text, out double peso) || peso <= 0)
             {
                 mensajeError = "El peso debe ser un número mayor a 0";

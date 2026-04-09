@@ -1,6 +1,7 @@
 using Microsoft.Data.SqlClient;
 using Sistema_integrado.Models;
 using Sistema_integrado.Ventanas;
+using System.Data;
 
 namespace Sistema_integrado
 {
@@ -35,26 +36,30 @@ namespace Sistema_integrado
                 ",@Peso)\r\n";
             var parametros = new List<SqlParameter>
             {
-            new ("@Nombre", txtNombre.Text.Trim()),
-            new ("@Especie", CBEspecie.SelectedItem?.ToString()?.Trim()),
-            new ("@Raza", txtRaza.Text.Trim()),
-            new ("@Edad", txtEdad.Text.Trim()),
-            new ("@Peso", txtPeso.Text.Trim())
+            new ("@Nombre", paciente.Nombre),
+            new ("@Especie", paciente.Especie),
+            new ("@Raza", paciente.Raza),
+            new ("@Edad", paciente.Edad),
+            new ("@Peso", paciente.Peso)
             };
             BD.Consultando(consulta, parametros);
         }
 
         private void TSB_Consulta_Click(object sender, EventArgs e)
         {
-            consulta = "SELECT * FROM Mascotas";
+            consulta = "SELECT * FROM [dbo].[Mascotas]";
 
-            BD.Consultando(consulta);
+            DataTable tablita = BD.Consultando(consulta);
+            DGVMascotas.DataSource = tablita;
         }
 
         private void TSB_Editar_Click(object sender, EventArgs e)
         {
             VentanaCrearEditar ventana = new VentanaCrearEditar(true, paciente);
             ventana.ShowDialog();
+
+
+
         }
 
         private void TSB_Eliminar_Click(object sender, EventArgs e)
@@ -83,6 +88,11 @@ namespace Sistema_integrado
 
             BD.Consultando(consulta, parametros);
             TSB_Consulta_Click(sender, e);
+        }
+
+        private void TSB_BuscarMascotas_Click(object sender, EventArgs e)
+        {
+
         }
 
         

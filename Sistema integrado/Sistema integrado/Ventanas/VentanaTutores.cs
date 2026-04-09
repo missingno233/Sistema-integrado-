@@ -47,6 +47,13 @@ namespace Sistema_integrado.Ventanas
 
         private void TSB_Consulta_Click(object sender, EventArgs e)
         {
+            consulta = "SELECT " +
+                "Id, Nombre, Telefono" +
+                ", Direccion, Mascota " +
+                "FROM Tutores " +
+                "ORDER BY Nombre;";
+            DataTable tabla = BD.Consultando(consulta);
+            DGVTutores.DataSource = tabla;
 
         }
 
@@ -83,6 +90,18 @@ namespace Sistema_integrado.Ventanas
 
             BD.Consultando(consulta, parametros);
             TSB_Consulta_Click(sender, e);
+        }
+
+        private void TSB_Buscar_Click(object sender, EventArgs e)
+        {
+            Tutor tutor = new Tutor();
+            VentanaBuscar buscar = new(tutor);
+            buscar.FormClosed += (s, args) => this.Show();
+            buscar.Show();
+
+
+            DataTable tablita= BD.Consultando(tutor.consulta);
+            DGVTutores.DataSource = tablita;
         }
     }
 }

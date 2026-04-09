@@ -33,7 +33,11 @@
             TSB_Consulta = new ToolStripButton();
             TSB_Editar = new ToolStripButton();
             TSB_Eliminar = new ToolStripButton();
+            TSB_Buscar = new ToolStripButton();
             DGVTutores = new DataGridView();
+            Nombre = new DataGridViewTextBoxColumn();
+            Telefono = new DataGridViewTextBoxColumn();
+            Direccion = new DataGridViewTextBoxColumn();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DGVTutores).BeginInit();
             SuspendLayout();
@@ -42,7 +46,7 @@
             // 
             toolStrip1.BackColor = Color.Transparent;
             toolStrip1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { TSB_Crear, TSB_Consulta, TSB_Editar, TSB_Eliminar });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { TSB_Crear, TSB_Consulta, TSB_Editar, TSB_Eliminar, TSB_Buscar });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(854, 37);
@@ -85,13 +89,39 @@
             TSB_Eliminar.Text = "Eliminar";
             TSB_Eliminar.Click += TSB_Eliminar_Click;
             // 
+            // TSB_Buscar
+            // 
+            TSB_Buscar.Alignment = ToolStripItemAlignment.Right;
+            TSB_Buscar.Image = Properties.Resources.buscandoimagen;
+            TSB_Buscar.ImageTransparentColor = Color.Magenta;
+            TSB_Buscar.Name = "TSB_Buscar";
+            TSB_Buscar.Size = new Size(94, 34);
+            TSB_Buscar.Text = "Buscar";
+            TSB_Buscar.Click += TSB_Buscar_Click;
+            // 
             // DGVTutores
             // 
             DGVTutores.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVTutores.Columns.AddRange(new DataGridViewColumn[] { Nombre, Telefono, Direccion });
             DGVTutores.Location = new Point(10, 37);
             DGVTutores.Name = "DGVTutores";
             DGVTutores.Size = new Size(835, 467);
             DGVTutores.TabIndex = 1;
+            // 
+            // Nombre
+            // 
+            Nombre.HeaderText = "Nombre";
+            Nombre.Name = "Nombre";
+            // 
+            // Telefono
+            // 
+            Telefono.HeaderText = "Telefono";
+            Telefono.Name = "Telefono";
+            // 
+            // Direccion
+            // 
+            Direccion.HeaderText = "Direccion";
+            Direccion.Name = "Direccion";
             // 
             // VentanaTutores
             // 
@@ -117,5 +147,9 @@
         private ToolStripButton TSB_Crear;
         private ToolStripButton TSB_Eliminar;
         private DataGridView DGVTutores;
+        private ToolStripButton TSB_Buscar;
+        private DataGridViewTextBoxColumn Nombre;
+        private DataGridViewTextBoxColumn Telefono;
+        private DataGridViewTextBoxColumn Direccion;
     }
 }

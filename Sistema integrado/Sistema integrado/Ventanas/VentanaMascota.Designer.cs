@@ -33,7 +33,13 @@
             TSB_Consulta = new ToolStripButton();
             TSB_Editar = new ToolStripButton();
             TSB_Eliminar = new ToolStripButton();
+            TSB_BuscarMascotas = new ToolStripButton();
             DGVMascotas = new DataGridView();
+            Nombre = new DataGridViewTextBoxColumn();
+            Especie = new DataGridViewTextBoxColumn();
+            Raza = new DataGridViewTextBoxColumn();
+            Edad = new DataGridViewTextBoxColumn();
+            Peso = new DataGridViewTextBoxColumn();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DGVMascotas).BeginInit();
             SuspendLayout();
@@ -42,7 +48,7 @@
             // 
             toolStrip1.BackColor = Color.Transparent;
             toolStrip1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { TSB_Crear, TSB_Consulta, TSB_Editar, TSB_Eliminar });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { TSB_Crear, TSB_Consulta, TSB_Editar, TSB_Eliminar, TSB_BuscarMascotas });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(854, 37);
@@ -85,13 +91,49 @@
             TSB_Eliminar.Text = "Eliminar";
             TSB_Eliminar.Click += TSB_Eliminar_Click;
             // 
+            // TSB_BuscarMascotas
+            // 
+            TSB_BuscarMascotas.Alignment = ToolStripItemAlignment.Right;
+            TSB_BuscarMascotas.Image = Properties.Resources.buscandoimagen;
+            TSB_BuscarMascotas.ImageTransparentColor = Color.Magenta;
+            TSB_BuscarMascotas.Name = "TSB_BuscarMascotas";
+            TSB_BuscarMascotas.Size = new Size(94, 34);
+            TSB_BuscarMascotas.Text = "Buscar";
+            TSB_BuscarMascotas.Click += TSB_BuscarMascotas_Click;
+            // 
             // DGVMascotas
             // 
             DGVMascotas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            DGVMascotas.Columns.AddRange(new DataGridViewColumn[] { Nombre, Especie, Raza, Edad, Peso });
             DGVMascotas.Location = new Point(10, 37);
             DGVMascotas.Name = "DGVMascotas";
             DGVMascotas.Size = new Size(832, 467);
             DGVMascotas.TabIndex = 1;
+            // 
+            // Nombre
+            // 
+            Nombre.HeaderText = "Nombre del paciente";
+            Nombre.Name = "Nombre";
+            // 
+            // Especie
+            // 
+            Especie.HeaderText = "Especie";
+            Especie.Name = "Especie";
+            // 
+            // Raza
+            // 
+            Raza.HeaderText = "Raza";
+            Raza.Name = "Raza";
+            // 
+            // Edad
+            // 
+            Edad.HeaderText = "Edad";
+            Edad.Name = "Edad";
+            // 
+            // Peso
+            // 
+            Peso.HeaderText = "Peso";
+            Peso.Name = "Peso";
             // 
             // VentanaMascota
             // 
@@ -117,5 +159,11 @@
         private ToolStripButton TSB_Crear;
         private ToolStripButton TSB_Eliminar;
         private DataGridView DGVMascotas;
+        private ToolStripButton TSB_BuscarMascotas;
+        private DataGridViewTextBoxColumn Nombre;
+        private DataGridViewTextBoxColumn Especie;
+        private DataGridViewTextBoxColumn Raza;
+        private DataGridViewTextBoxColumn Edad;
+        private DataGridViewTextBoxColumn Peso;
     }
 }
