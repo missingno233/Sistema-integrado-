@@ -41,6 +41,8 @@
             txtTutorNombre = new TextBox();
             txtTelefono = new TextBox();
             txtDireccion = new TextBox();
+            lblEdicionTutor = new Label();
+            lblCreacionTutor = new Label();
             SuspendLayout();
             // 
             // txtNombre
@@ -120,6 +122,7 @@
             btnCancelar.TabIndex = 8;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // btnAceptar
             // 
@@ -129,6 +132,7 @@
             btnAceptar.TabIndex = 9;
             btnAceptar.Text = "Aceptar";
             btnAceptar.UseVisualStyleBackColor = true;
+            btnAceptar.Click += btnAceptar_Click;
             // 
             // lblEdicion
             // 
@@ -139,7 +143,6 @@
             lblEdicion.Size = new Size(343, 37);
             lblEdicion.TabIndex = 10;
             lblEdicion.Text = "Edite los datos del paciente";
-            lblEdicion.Click += label1_Click;
             // 
             // txtTutorNombre
             // 
@@ -171,11 +174,33 @@
             txtDireccion.Size = new Size(127, 29);
             txtDireccion.TabIndex = 13;
             // 
+            // lblEdicionTutor
+            // 
+            lblEdicionTutor.AutoSize = true;
+            lblEdicionTutor.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblEdicionTutor.Location = new Point(56, 34);
+            lblEdicionTutor.Name = "lblEdicionTutor";
+            lblEdicionTutor.Size = new Size(300, 37);
+            lblEdicionTutor.TabIndex = 14;
+            lblEdicionTutor.Text = "Edite los datos del tutor";
+            // 
+            // lblCreacionTutor
+            // 
+            lblCreacionTutor.AutoSize = true;
+            lblCreacionTutor.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblCreacionTutor.Location = new Point(49, 34);
+            lblCreacionTutor.Name = "lblCreacionTutor";
+            lblCreacionTutor.Size = new Size(326, 37);
+            lblCreacionTutor.TabIndex = 15;
+            lblCreacionTutor.Text = "Ingrese los datos del tutor";
+            // 
             // VentanaCrearEditar
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(434, 411);
+            Controls.Add(lblCreacionTutor);
+            Controls.Add(lblEdicionTutor);
             Controls.Add(txtDireccion);
             Controls.Add(txtTelefono);
             Controls.Add(txtTutorNombre);
@@ -212,5 +237,7 @@
         private TextBox txtTutorNombre;
         private TextBox txtTelefono;
         private TextBox txtDireccion;
+        private Label lblEdicionTutor;
+        private Label lblCreacionTutor;
     }
 }

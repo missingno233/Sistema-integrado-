@@ -18,8 +18,30 @@ namespace Sistema_integrado
 
         private void TSB_Crear_Click(object sender, EventArgs e)
         {
-            VentanaCrearEditar ventana = new VentanaCrearEditar(paciente);
+            VentanaCrearEditar ventana = new VentanaCrearEditar(false, paciente);
             ventana.ShowDialog();
+
+            consulta = "INSERT INTO [dbo].[Mascotas] \r\n " +
+                "([Nombre]\r\n" +
+                ",[Especie\r\n" +
+                ",[Raza]\r\n" +
+                ",[Edad]\r\n" +
+                ",[Peso])\r\n " +
+                "VALUES\r\n" +
+                "(@Nombre\r\n" +
+                ",@Especie\r\n" +
+                ",@Raza\r\n" +
+                ",@Edad\r\n" +
+                ",@Peso)\r\n";
+            var parametros = new List<SqlParameter>
+            {
+            new ("@Nombre", txtNombre.Text.Trim()),
+            new ("@Especie", CBEspecie.SelectedItem?.ToString()?.Trim()),
+            new ("@Raza", txtRaza.Text.Trim()),
+            new ("@Edad", txtEdad.Text.Trim()),
+            new ("@Peso", txtPeso.Text.Trim())
+            };
+            BD.Consultando(consulta, parametros);
         }
 
         private void TSB_Consulta_Click(object sender, EventArgs e)
@@ -31,7 +53,7 @@ namespace Sistema_integrado
 
         private void TSB_Editar_Click(object sender, EventArgs e)
         {
-            VentanaCrearEditar ventana = new VentanaCrearEditar(paciente);
+            VentanaCrearEditar ventana = new VentanaCrearEditar(true, paciente);
             ventana.ShowDialog();
         }
 

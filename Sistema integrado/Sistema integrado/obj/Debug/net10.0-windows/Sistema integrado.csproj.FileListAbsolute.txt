@@ -2,7 +2,6 @@ C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\
 C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.Properties.Resources.resources
 C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.VentanaPrincipal.resources
 C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.Ventanas.VentanaCrearEditar.resources
-C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.Ventanas.VentanaEliminar.resources
 C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.VentanaMascota.resources
 C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.Ventanas.VentanaTutores.resources
 C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.csproj.GenerateResource.cache
@@ -118,3 +117,4 @@ C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\S
 C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema .AD4A545B.Up2Date
 C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.genruntimeconfig.cache
 C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\ref\Sistema integrado.dll
+C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.Ventanas.VentanaBuscar.resources

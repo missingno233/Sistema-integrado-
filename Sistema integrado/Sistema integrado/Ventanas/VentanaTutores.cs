@@ -41,7 +41,7 @@ namespace Sistema_integrado.Ventanas
 
         private void TSB_Crear_Click(object sender, EventArgs e)
         {
-            VentanaCrearEditar ventana = new(tutor);
+            VentanaCrearEditar ventana = new(false, tutor);
             ventana.ShowDialog();
         }
 
@@ -52,7 +52,7 @@ namespace Sistema_integrado.Ventanas
 
         private void TSB_Editar_Click(object sender, EventArgs e)
         {
-            VentanaCrearEditar ventana = new(tutor);
+            VentanaCrearEditar ventana = new(true, tutor);
             ventana.ShowDialog();
         }
 
