@@ -28,42 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaBuscar));
+            txtBuscarPaciente = new TextBox();
             button1 = new Button();
+            lblPaciente = new Label();
+            lblTutores = new Label();
+            txtBuscarTutor = new TextBox();
             SuspendLayout();
             // 
-            // textBox1
+            // txtBuscarPaciente
             // 
-            textBox1.Location = new Point(342, 48);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(100, 23);
-            textBox1.TabIndex = 0;
+            txtBuscarPaciente.Location = new Point(126, 52);
+            txtBuscarPaciente.Name = "txtBuscarPaciente";
+            txtBuscarPaciente.Size = new Size(165, 23);
+            txtBuscarPaciente.TabIndex = 0;
             // 
             // button1
             // 
-            button1.Location = new Point(360, 109);
+            button1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            button1.Location = new Point(151, 96);
             button1.Name = "button1";
-            button1.Size = new Size(75, 23);
+            button1.Size = new Size(75, 39);
             button1.TabIndex = 1;
-            button1.Text = "button1";
+            button1.Text = "Buscar";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += btnBuscar_Click;
+            // 
+            // lblPaciente
+            // 
+            lblPaciente.AutoSize = true;
+            lblPaciente.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblPaciente.Location = new Point(54, 50);
+            lblPaciente.Name = "lblPaciente";
+            lblPaciente.Size = new Size(70, 21);
+            lblPaciente.TabIndex = 2;
+            lblPaciente.Text = "Paciente:";
+            // 
+            // lblTutores
+            // 
+            lblTutores.AutoSize = true;
+            lblTutores.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            lblTutores.Location = new Point(70, 50);
+            lblTutores.Name = "lblTutores";
+            lblTutores.Size = new Size(50, 21);
+            lblTutores.TabIndex = 3;
+            lblTutores.Text = "Tutor:";
+            // 
+            // txtBuscarTutor
+            // 
+            txtBuscarTutor.Location = new Point(126, 52);
+            txtBuscarTutor.Name = "txtBuscarTutor";
+            txtBuscarTutor.Size = new Size(165, 23);
+            txtBuscarTutor.TabIndex = 4;
             // 
             // VentanaBuscar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(784, 161);
+            ClientSize = new Size(385, 161);
+            Controls.Add(txtBuscarTutor);
+            Controls.Add(lblTutores);
+            Controls.Add(lblPaciente);
             Controls.Add(button1);
-            Controls.Add(textBox1);
+            Controls.Add(txtBuscarPaciente);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "VentanaBuscar";
-            Text = "VentanaBuscar";
+            Text = "Buscar";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox txtBuscarPaciente;
         private Button button1;
+        private Label lblPaciente;
+        private Label lblTutores;
+        private TextBox txtBuscarTutor;
     }
 }

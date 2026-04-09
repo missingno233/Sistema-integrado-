@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\missi\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\missi\\.nuget\\packages"
+      "C:\\Users\\gaelg\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\gaelg\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": false,

@@ -28,7 +28,7 @@ namespace Sistema_integrado.Ventanas
         public VentanaCrearEditar(bool _editar, Paciente paciente)
         {
             InitializeComponent();
-            PaginaLimpia();
+            paginaPredeterminada();
             this.elias = paciente;
             Tipo = "Paciente";
 
@@ -44,7 +44,7 @@ namespace Sistema_integrado.Ventanas
         public VentanaCrearEditar(bool _editar, Tutor tutor)
         {
             InitializeComponent();
-            PaginaLimpia();
+            paginaPredeterminada();
             this.tutor = tutor;
             Tipo = "Tutor";
 
@@ -113,7 +113,7 @@ namespace Sistema_integrado.Ventanas
             lblEdicionTutor.Visible = true;
         }
 
-        public void PaginaLimpia()
+        public void paginaPredeterminada()
         {
             //pacientes
             txtNombre.Visible = false;
@@ -149,7 +149,6 @@ namespace Sistema_integrado.Ventanas
             else
             {
                 this.Close();
-
             }
         }
 
@@ -249,7 +248,6 @@ namespace Sistema_integrado.Ventanas
                     }
                     break;
             }
-
             return vacio; 
         }
 

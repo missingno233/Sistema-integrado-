@@ -188,7 +188,7 @@
             // 
             lblCreacionTutor.AutoSize = true;
             lblCreacionTutor.Font = new Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            lblCreacionTutor.Location = new Point(49, 34);
+            lblCreacionTutor.Location = new Point(55, 34);
             lblCreacionTutor.Name = "lblCreacionTutor";
             lblCreacionTutor.Size = new Size(326, 37);
             lblCreacionTutor.TabIndex = 15;

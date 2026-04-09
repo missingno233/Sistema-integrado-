@@ -63,6 +63,16 @@ namespace Sistema_integrado.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Byte[].
         /// </summary>
+        internal static byte[] buscando {
+            get {
+                object obj = ResourceManager.GetObject("buscando", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Byte[].
+        /// </summary>
         internal static byte[] Conectado {
             get {
                 object obj = ResourceManager.GetObject("Conectado", resourceCulture);
