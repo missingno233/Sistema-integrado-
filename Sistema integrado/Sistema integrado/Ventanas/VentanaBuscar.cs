@@ -50,7 +50,7 @@ namespace Sistema_integrado.Ventanas
 
                 case "paciente":
 
-                    p.consulta = "SELECT FROM WHERE <nombre tentativo de la tabla> = @Nombre";
+                    p.consulta = "SELECT FROM <NOMBRE TENTATIVO> WHERE <NOMBRE PACIENTE> = @Nombre";
                     break;
                 case "tutor":
                     t.consulta = "SELECT FROM <NOMBRE TENTATIVO> WHERE <NOMBRE TUTOR> = @Nombre";

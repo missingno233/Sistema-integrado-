@@ -12,9 +12,10 @@ namespace Sistema_integrado.Ventanas
 {
     public partial class VentanaTutores : Form
     {
+        Models.ConexionBD BD = new();
+
         private Tutor tutor = new();
         private String consulta = "";
-        Models.ConexionBD BD = new();
         private int idseleccionado = 0;
 
         public VentanaTutores()
@@ -35,32 +36,68 @@ namespace Sistema_integrado.Ventanas
                     this.Icon = new Icon(stream);
                 }
             }
-
-
         }
 
         private void TSB_Crear_Click(object sender, EventArgs e)
         {
             VentanaCrearEditar ventana = new(false, tutor);
             ventana.ShowDialog();
+
+            var parametros = new List<SqlParameter>
+                        {
+                            new SqlParameter("@Nombre", elias.Nombre),
+                            new SqlParameter("@Raza", elias.Raza),
+                            new SqlParameter("@Especie", elias.Especie),
+                            new SqlParameter("@Peso", elias.Peso),
+                            new SqlParameter("@Edad", elias.Edad)
+                        };
+
+            DataTable tabla = BD.Consultando(consulta, parametros);
         }
 
         private void TSB_Consulta_Click(object sender, EventArgs e)
         {
-            consulta = "SELECT " +
-                "Id, Nombre, Telefono" +
-                ", Direccion, Mascota " +
-                "FROM Tutores " +
-                "ORDER BY Nombre;";
+            consulta = "SELECT * FROM Tutores";
+
             DataTable tabla = BD.Consultando(consulta);
             DGVTutores.DataSource = tabla;
-
         }
 
         private void TSB_Editar_Click(object sender, EventArgs e)
         {
-            VentanaCrearEditar ventana = new(true, tutor);
-            ventana.ShowDialog();
+            if (DGVTutores.SelectedRows != null &&
+                DGVTutores.SelectedRows.Count > 0)
+            {
+                idseleccionado = Convert.ToInt32(DGVTutores.
+                    SelectedRows[0].Cells[0].Value);
+
+                VentanaCrearEditar ventana = new(true, tutor);
+                ventana.ShowDialog();
+
+                consulta = "UPDATE Tutores\r\n" +
+                    "SET Nombre = @Nombre,\r\n    " +
+                    "Telefono = @Telefono,\r\n    " +
+                    "Direccion = @Direccion,\r\n    " +
+                    "Mascota = @Mascota\r\n" +
+                    "WHERE Id = @Id;";
+
+                var parametros = new List<SqlParameter>
+                {
+                    new("@Id", idseleccionado),
+                    new("@Nombre", tutor.Nombre),
+                    new("@Telefono", tutor.Telefono),
+                    new("@Direccion", tutor.Direccion),
+                    new("@Mascota", tutor.Mascota)
+                };
+                DataTable tabla = BD.Consultando(consulta, parametros);
+                DGVTutores.DataSource = tabla;
+            }
+            else
+            {
+                MessageBox.Show("Porfavor, seleccione un registro a editar"
+                    , "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
         }
 
         private void TSB_Eliminar_Click(object sender, EventArgs e)
@@ -74,6 +111,15 @@ namespace Sistema_integrado.Ventanas
             {
                 idseleccionado = Convert.ToInt32(DGVTutores.
                     SelectedRows[0].Cells[0].Value);
+
+                var parametros = new List<SqlParameter>
+                {
+                    new SqlParameter("@id", idseleccionado)
+                };
+
+
+                BD.Consultando(consulta, parametros);
+                TSB_Consulta_Click(sender, e);
             }
             else
             {
@@ -82,14 +128,6 @@ namespace Sistema_integrado.Ventanas
                 return;
             }
 
-            var parametros = new List<SqlParameter>
-            {
-                new SqlParameter("@id", idseleccionado)
-            };
-
-
-            BD.Consultando(consulta, parametros);
-            TSB_Consulta_Click(sender, e);
         }
 
         private void TSB_Buscar_Click(object sender, EventArgs e)

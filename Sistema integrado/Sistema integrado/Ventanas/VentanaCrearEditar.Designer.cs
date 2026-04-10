@@ -43,6 +43,7 @@
             txtDireccion = new TextBox();
             lblEdicionTutor = new Label();
             lblCreacionTutor = new Label();
+            BTN_AceptarEdicion = new Button();
             SuspendLayout();
             // 
             // txtNombre
@@ -194,11 +195,22 @@
             lblCreacionTutor.TabIndex = 15;
             lblCreacionTutor.Text = "Ingrese los datos del tutor";
             // 
+            // BTN_AceptarEdicion
+            // 
+            BTN_AceptarEdicion.Location = new Point(235, 310);
+            BTN_AceptarEdicion.Name = "BTN_AceptarEdicion";
+            BTN_AceptarEdicion.Size = new Size(112, 59);
+            BTN_AceptarEdicion.TabIndex = 16;
+            BTN_AceptarEdicion.Text = "Aceptar";
+            BTN_AceptarEdicion.UseVisualStyleBackColor = true;
+            BTN_AceptarEdicion.Click += BTN_AceptarEdicion_Click;
+            // 
             // VentanaCrearEditar
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(434, 411);
+            Controls.Add(BTN_AceptarEdicion);
             Controls.Add(lblCreacionTutor);
             Controls.Add(lblEdicionTutor);
             Controls.Add(txtDireccion);
@@ -239,5 +251,6 @@
         private TextBox txtDireccion;
         private Label lblEdicionTutor;
         private Label lblCreacionTutor;
+        private Button BTN_AceptarEdicion;
     }
 }

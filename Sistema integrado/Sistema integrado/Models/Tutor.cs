@@ -11,5 +11,6 @@ namespace Sistema_integrado.Models
         public string Telefono { get; set; }
         public string Direccion { get; set; }
         public string consulta{ get; set; }
+        public string Mascota { get; set; }
     }
 }

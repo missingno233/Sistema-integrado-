@@ -20,7 +20,7 @@ namespace Sistema_integrado.Ventanas
         private bool _tutor = false;
         private bool _editar = false;
         private bool Valido = false;
-        
+
         private string consulta = "";
         private string Tipo = string.Empty;
 
@@ -154,16 +154,31 @@ namespace Sistema_integrado.Ventanas
             {
                 default:
                     break;
+
                 case "Paciente":
+
                     if (ValidarCampos(out string mensajeError))
                     {
+                        elias.consulta = "INSERT INTO Pacientes " +
+                            "(Nombre" +
+                            ", Raza" +
+                            ", Especie" +
+                            ", Peso" +
+                            ", Edad) " +
+                            "VALUES " +
+                            "(@Nombre" +
+                            ", @Raza" +
+                            ", @Especie" +
+                            ", @Peso" +
+                            ", @Edad)";
+                        
                         elias.Nombre = txtNombre.Text.Trim();
                         elias.Raza = txtRaza.Text.Trim();
                         elias.Especie = CBEspecie.SelectedItem?.ToString()?.Trim();
                         elias.Peso = double.Parse(txtPeso.Text.Trim());
                         elias.Edad = int.Parse(txtEdad.Text.Trim());
 
-                        MessageBox.Show("salvado", "Éxito", MessageBoxButtons.OK, 
+                        MessageBox.Show("salvado", "Éxito", MessageBoxButtons.OK,
                             MessageBoxIcon.Information);
                     }
                     else
@@ -172,9 +187,20 @@ namespace Sistema_integrado.Ventanas
                             MessageBoxIcon.Error);
                     }
                     break;
+
                 case "Tutor":
+
                     if (ValidarCampos(out string pacienteError))
                     {
+                        tutor.consulta = "INSERT INTO Tutores " +
+                            "(Nombre" +
+                            ", Telefono" +
+                            ", Direccion) " +
+                            "VALUES " +
+                            "(@Nombre" +
+                            ", @Telefono" +
+                            ", @Direccion)";
+
                         txtTutorNombre.Text = tutor.Nombre.Trim();
                         txtTelefono.Text = tutor.Telefono.Trim();
                         txtDireccion.Text = tutor.Direccion.Trim();
@@ -189,8 +215,8 @@ namespace Sistema_integrado.Ventanas
                     }
                     break;
             }
+            this.Close();
         }
-
 
         private bool ValidarCampos(out string mensajeError)
         {
@@ -231,7 +257,7 @@ namespace Sistema_integrado.Ventanas
 
             return true;
         }
-                
+
 
         public bool verificacionCancelacion(string tipo, bool vacio)
         {
@@ -269,8 +295,77 @@ namespace Sistema_integrado.Ventanas
                     }
                     break;
             }
-            return vacio; 
+            return vacio;
         }
 
+        private void BTN_AceptarEdicion_Click(object sender, EventArgs e)
+        {
+            switch (Tipo)
+            {
+                default:
+                    break;
+
+                case "Paciente":
+
+                    if (ValidarCampos(out string mensajeError))
+                    {
+                        elias.consulta = "INSERT INTO Pacientes " +
+                            "(Nombre" +
+                            ", Raza" +
+                            ", Especie" +
+                            ", Peso" +
+                            ", Edad) " +
+                            "VALUES " +
+                            "(@Nombre" +
+                            ", @Raza" +
+                            ", @Especie" +
+                            ", @Peso" +
+                            ", @Edad)";
+
+                        elias.Nombre = txtNombre.Text.Trim();
+                        elias.Raza = txtRaza.Text.Trim();
+                        elias.Especie = CBEspecie.SelectedItem?.ToString()?.Trim();
+                        elias.Peso = double.Parse(txtPeso.Text.Trim());
+                        elias.Edad = int.Parse(txtEdad.Text.Trim());
+
+                        MessageBox.Show("salvado", "Éxito", MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show(mensajeError, "Error", MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                    }
+                    break;
+
+                case "Tutor":
+
+                    if (ValidarCampos(out string pacienteError))
+                    {
+                        tutor.consulta = "INSERT INTO Tutores " +
+                            "(Nombre" +
+                            ", Telefono" +
+                            ", Direccion) " +
+                            "VALUES " +
+                            "(@Nombre" +
+                            ", @Telefono" +
+                            ", @Direccion)";
+
+                        txtTutorNombre.Text = tutor.Nombre.Trim();
+                        txtTelefono.Text = tutor.Telefono.Trim();
+                        txtDireccion.Text = tutor.Direccion.Trim();
+
+                        MessageBox.Show("salvado", "Éxito", MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+                    }
+                    else
+                    {
+                        MessageBox.Show(pacienteError, "Error", MessageBoxButtons.OK,
+                            MessageBoxIcon.Error);
+                    }
+                    break;
+            }
+            this.Close();
+        }
     }
 }
