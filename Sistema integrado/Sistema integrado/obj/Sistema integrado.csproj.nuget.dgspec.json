@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\missi\\OneDrive\\Escritorio\\mamadas\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Sistema integrado.csproj": {}
+    "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Sistema integrado.csproj": {}
   },
   "projects": {
-    "C:\\Users\\missi\\OneDrive\\Escritorio\\mamadas\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Sistema integrado.csproj": {
+    "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Sistema integrado.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\missi\\OneDrive\\Escritorio\\mamadas\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Sistema integrado.csproj",
+        "projectUniqueName": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Sistema integrado.csproj",
         "projectName": "Sistema integrado",
-        "projectPath": "C:\\Users\\missi\\OneDrive\\Escritorio\\mamadas\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Sistema integrado.csproj",
-        "packagesPath": "C:\\Users\\missi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\missi\\OneDrive\\Escritorio\\mamadas\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\obj\\",
+        "projectPath": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Sistema integrado.csproj",
+        "packagesPath": "C:\\Users\\gaelg\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\gaelg\\OneDrive\\Documentos\\GitHub\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\missi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\gaelg\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

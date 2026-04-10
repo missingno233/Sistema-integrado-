@@ -1,12 +1,13 @@
-﻿using Microsoft.Data.SqlClient;
-using Sistema_integrado.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System;
 using System.Data;
-using System.Drawing;
 using System.Text;
+using System.Drawing;
 using System.Windows.Forms;
+using System.ComponentModel;
+using Microsoft.Data.SqlClient;
+using Sistema_integrado.Models;
+using System.Collections.Generic;
+
 
 namespace Sistema_integrado.Ventanas
 {
@@ -300,6 +301,8 @@ namespace Sistema_integrado.Ventanas
 
         private void BTN_AceptarEdicion_Click(object sender, EventArgs e)
         {
+            
+
             switch (Tipo)
             {
                 default:

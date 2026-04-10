@@ -44,13 +44,13 @@ namespace Sistema_integrado.Ventanas
             ventana.ShowDialog();
 
             var parametros = new List<SqlParameter>
-                        {
-                            new SqlParameter("@Nombre", elias.Nombre),
-                            new SqlParameter("@Raza", elias.Raza),
-                            new SqlParameter("@Especie", elias.Especie),
-                            new SqlParameter("@Peso", elias.Peso),
-                            new SqlParameter("@Edad", elias.Edad)
-                        };
+            {
+                new SqlParameter("@Nombre", elias.Nombre),
+                new SqlParameter("@Raza", elias.Raza),
+                new SqlParameter("@Especie", elias.Especie),
+                new SqlParameter("@Peso", elias.Peso),
+                new SqlParameter("@Edad", elias.Edad)
+            };
 
             DataTable tabla = BD.Consultando(consulta, parametros);
         }
