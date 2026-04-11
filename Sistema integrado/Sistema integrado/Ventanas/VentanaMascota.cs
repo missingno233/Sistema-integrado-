@@ -16,7 +16,6 @@ namespace Sistema_integrado
         {
             InitializeComponent();
         }
-
         private void TSB_Crear_Click(object sender, EventArgs e)
         {
             VentanaCrearEditar ventana = new VentanaCrearEditar(false, paciente);
@@ -36,18 +35,22 @@ namespace Sistema_integrado
                 ",@Peso)\r\n";
             var parametros = new List<SqlParameter>
             {
-            new ("@Nombre", paciente.Nombre),
-            new ("@Especie", paciente.Especie),
-            new ("@Raza", paciente.Raza),
-            new ("@Edad", paciente.Edad),
-            new ("@Peso", paciente.Peso)
+                new ("@Nombre", paciente.Nombre),
+                new ("@Especie", paciente.Especie),
+                new ("@Raza", paciente.Raza),
+                new ("@Edad", paciente.Edad),
+                new ("@Peso", paciente.Peso)
             };
-            BD.Consultando(consulta, parametros);
+
+            DataTable tabla = BD.Consultando(consulta, parametros);
+            DGVMascotas.DataSource = tabla;
+
+            TSB_Consulta_Click(sender, e);
         }
 
         private void TSB_Consulta_Click(object sender, EventArgs e)
         {
-            consulta = "SELECT * FROM [dbo].[Mascotas]";
+            consulta = "SELECT * FROM Mascotas";
 
             DataTable tablita = BD.Consultando(consulta);
             DGVMascotas.DataSource = tablita;
@@ -55,9 +58,42 @@ namespace Sistema_integrado
 
         private void TSB_Editar_Click(object sender, EventArgs e)
         {
-            VentanaCrearEditar ventana = new VentanaCrearEditar(true, paciente);
-            ventana.ShowDialog();
+            if (DGVMascotas.SelectedRows != null &&
+                DGVMascotas.SelectedRows.Count > 0)
+            {
+                idseleccionado = Convert.ToInt32(DGVMascotas.
+                    SelectedRows[0].Cells[0].Value);
 
+                VentanaCrearEditar ventana = new(true, paciente);
+                ventana.ShowDialog();
+
+                consulta = "UPDATE Pacientes " +
+                    "SET Nombre = @Nombre" +
+                    ", Especie = @Especie" +
+                    ", Raza = @Raza" +
+                    ", Edad = @Edad" +
+                    ", Peso = @Peso" +
+                    "WHERE Id = @Id; ";
+
+                var parametros = new List<SqlParameter>
+                {
+                    new("@Id", idseleccionado),
+                    new("@Nombre", paciente.Nombre),
+                    new("@Especie", paciente.Especie),
+                    new("@Raza", paciente.Raza),
+                    new("@Edad", paciente.Edad),
+                    new("@Peso", paciente.Peso),
+                };
+                DataTable tabla = BD.Consultando(consulta, parametros);
+                DGVMascotas.DataSource = tabla;
+            }
+            else
+            {
+                MessageBox.Show("Porfavor, seleccione un registro a editar"
+                    , "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            TSB_Consulta_Click(sender, e);
 
 
         }
@@ -85,16 +121,24 @@ namespace Sistema_integrado
                 new SqlParameter("@id", idseleccionado)
             };
 
+            DataTable tabla= BD.Consultando(consulta, parametros);
+            DGVMascotas.DataSource = tabla;
 
-            BD.Consultando(consulta, parametros);
             TSB_Consulta_Click(sender, e);
         }
 
         private void TSB_BuscarMascotas_Click(object sender, EventArgs e)
         {
+            Paciente pat = new Paciente();
+            VentanaBuscar buscar = new(pat);
+            buscar.FormClosed += (s, args) => this.Show();
+            buscar.Show();
+            
 
-        }
+            DataTable tablita = BD.Consultando(pat.consulta);
+            DGVMascotas.DataSource = tablita;
 
-        
+            TSB_Consulta_Click(sender, e);
+        }   
     }
 }

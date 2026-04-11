@@ -1,12 +1,12 @@
-﻿using Microsoft.Data.SqlClient;
-using Sistema_integrado.Models;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System;
 using System.Data;
-using System.Drawing;
 using System.Text;
+using System.Drawing;
 using System.Windows.Forms;
+using System.ComponentModel;
+using Microsoft.Data.SqlClient;
+using Sistema_integrado.Models;
+using System.Collections.Generic;
 
 namespace Sistema_integrado.Ventanas
 {
@@ -45,14 +45,16 @@ namespace Sistema_integrado.Ventanas
 
             var parametros = new List<SqlParameter>
             {
-                new SqlParameter("@Nombre", elias.Nombre),
-                new SqlParameter("@Raza", elias.Raza),
-                new SqlParameter("@Especie", elias.Especie),
-                new SqlParameter("@Peso", elias.Peso),
-                new SqlParameter("@Edad", elias.Edad)
+                new("@Nombre", tutor.Nombre),
+                new("@Raza", tutor.Telefono),
+                new("@Especie", tutor.Direccion),
+                new("@Mascota", tutor.Mascota)
             };
 
-            DataTable tabla = BD.Consultando(consulta, parametros);
+            DataTable tabla = BD.Consultando(tutor.consulta, parametros);
+            DGVTutores.DataSource = tabla;
+
+            TSB_Buscar_Click(sender, e);
         }
 
         private void TSB_Consulta_Click(object sender, EventArgs e)
@@ -98,6 +100,7 @@ namespace Sistema_integrado.Ventanas
                     , "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
+            TSB_Consulta_Click(sender, e);
         }
 
         private void TSB_Eliminar_Click(object sender, EventArgs e)
@@ -127,7 +130,7 @@ namespace Sistema_integrado.Ventanas
                     , "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-
+            TSB_Consulta_Click(sender, e);
         }
 
         private void TSB_Buscar_Click(object sender, EventArgs e)
@@ -140,6 +143,7 @@ namespace Sistema_integrado.Ventanas
 
             DataTable tablita= BD.Consultando(tutor.consulta);
             DGVTutores.DataSource = tablita;
+           TSB_Consulta_Click(sender, e);
         }
     }
 }
