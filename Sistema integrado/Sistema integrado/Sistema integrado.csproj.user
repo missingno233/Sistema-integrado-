@@ -7,6 +7,9 @@
     <Compile Update="Ventanas\VentanaBuscar.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Ventanas\VentanaCita.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Ventanas\VentanaMascota.cs">
       <SubType>Form</SubType>
     </Compile>

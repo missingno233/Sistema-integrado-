@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaPrincipal));
             PBMascota = new PictureBox();
             label1 = new Label();
             label2 = new Label();
@@ -87,6 +88,7 @@
             Controls.Add(PBTutores);
             Controls.Add(label1);
             Controls.Add(PBMascota);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "VentanaPrincipal";
             Text = "VentanaPrincipal";
             ((System.ComponentModel.ISupportInitialize)PBMascota).EndInit();

@@ -34,6 +34,7 @@
             lblPaciente = new Label();
             lblTutores = new Label();
             txtBuscarTutor = new TextBox();
+            label1 = new Label();
             SuspendLayout();
             // 
             // txtBuscarPaciente
@@ -81,11 +82,22 @@
             txtBuscarTutor.Size = new Size(165, 23);
             txtBuscarTutor.TabIndex = 4;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label1.Location = new Point(42, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(317, 25);
+            label1.TabIndex = 5;
+            label1.Text = "Ingrese el nombre que desea buscar";
+            // 
             // VentanaBuscar
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(385, 161);
+            Controls.Add(label1);
             Controls.Add(txtBuscarTutor);
             Controls.Add(lblTutores);
             Controls.Add(lblPaciente);
@@ -105,5 +117,6 @@
         private Label lblPaciente;
         private Label lblTutores;
         private TextBox txtBuscarTutor;
+        private Label label1;
     }
 }

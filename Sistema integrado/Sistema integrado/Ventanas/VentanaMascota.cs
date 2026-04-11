@@ -121,7 +121,7 @@ namespace Sistema_integrado
                 new SqlParameter("@id", idseleccionado)
             };
 
-            DataTable tabla= BD.Consultando(consulta, parametros);
+            DataTable tabla = BD.Consultando(consulta, parametros);
             DGVMascotas.DataSource = tabla;
 
             TSB_Consulta_Click(sender, e);
@@ -133,12 +133,22 @@ namespace Sistema_integrado
             VentanaBuscar buscar = new(pat);
             buscar.FormClosed += (s, args) => this.Show();
             buscar.Show();
-            
+
 
             DataTable tablita = BD.Consultando(pat.consulta);
             DGVMascotas.DataSource = tablita;
 
             TSB_Consulta_Click(sender, e);
-        }   
+        }
+
+        private void TSB_Cita_Click(object sender, EventArgs e)
+        {
+            VentanaCita ventana = new VentanaCita();
+            this.Close();
+            ventana.FormClosed += (s, args) => this.Show();
+            ventana.Show();
+
+
+        }
     }
 }

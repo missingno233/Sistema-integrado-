@@ -15,21 +15,17 @@ namespace Sistema_integrado.Ventanas
         Models.ConexionBD BD = new();
         private string tipo = string.Empty;
 
-
-        public VentanaBuscar()
-        {
-            InitializeComponent();
-            paginaPredeterminada();
-        }
         public VentanaBuscar(Paciente paciente)
         {
             InitializeComponent();
+            paginaPredeterminada();
             cargarPaciente();
             tipo = "paciente";
         }
         public VentanaBuscar(Tutor tutor)
         {
             InitializeComponent();
+            paginaPredeterminada();
             cargarTutor();
             tipo = "tutor";
         }
@@ -76,8 +72,8 @@ namespace Sistema_integrado.Ventanas
         {
             txtBuscarPaciente.Visible = false;
             txtBuscarTutor.Visible = false;
-            lblPaciente.Visible = false; 
-            lblTutores.Visible = false; 
+            lblPaciente.Visible = false;
+            lblTutores.Visible = false;
         }
     }
 }

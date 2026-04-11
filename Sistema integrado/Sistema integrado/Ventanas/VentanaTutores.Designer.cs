@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaTutores));
             toolStrip1 = new ToolStrip();
             TSB_Crear = new ToolStripButton();
             TSB_Consulta = new ToolStripButton();
@@ -38,6 +39,7 @@
             Nombre = new DataGridViewTextBoxColumn();
             Telefono = new DataGridViewTextBoxColumn();
             Direccion = new DataGridViewTextBoxColumn();
+            TSB_Cita = new ToolStripButton();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DGVTutores).BeginInit();
             SuspendLayout();
@@ -46,7 +48,7 @@
             // 
             toolStrip1.BackColor = Color.Transparent;
             toolStrip1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { TSB_Crear, TSB_Consulta, TSB_Editar, TSB_Eliminar, TSB_Buscar });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { TSB_Crear, TSB_Consulta, TSB_Editar, TSB_Eliminar, TSB_Buscar, TSB_Cita });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(854, 37);
@@ -123,6 +125,15 @@
             Direccion.HeaderText = "Direccion";
             Direccion.Name = "Direccion";
             // 
+            // TSB_Cita
+            // 
+            TSB_Cita.Image = Properties.Resources.cita;
+            TSB_Cita.ImageTransparentColor = Color.Magenta;
+            TSB_Cita.Name = "TSB_Cita";
+            TSB_Cita.Size = new Size(69, 34);
+            TSB_Cita.Text = "Cita";
+            TSB_Cita.Click += TSB_Cita_Click;
+            // 
             // VentanaTutores
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -130,6 +141,7 @@
             ClientSize = new Size(854, 516);
             Controls.Add(DGVTutores);
             Controls.Add(toolStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "VentanaTutores";
             Text = "Tutores";
             toolStrip1.ResumeLayout(false);
@@ -151,5 +163,6 @@
         private DataGridViewTextBoxColumn Nombre;
         private DataGridViewTextBoxColumn Telefono;
         private DataGridViewTextBoxColumn Direccion;
+        private ToolStripButton TSB_Cita;
     }
 }

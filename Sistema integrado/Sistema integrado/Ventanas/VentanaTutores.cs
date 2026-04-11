@@ -141,9 +141,17 @@ namespace Sistema_integrado.Ventanas
             buscar.Show();
 
 
-            DataTable tablita= BD.Consultando(tutor.consulta);
+            DataTable tablita = BD.Consultando(tutor.consulta);
             DGVTutores.DataSource = tablita;
-           TSB_Consulta_Click(sender, e);
+            TSB_Consulta_Click(sender, e);
+        }
+
+        private void TSB_Cita_Click(object sender, EventArgs e)
+        {
+            VentanaCita ventana = new();
+            this.Close();
+            ventana.FormClosed += (s, args) => this.Show();
+            ventana.Show();
         }
     }
 }

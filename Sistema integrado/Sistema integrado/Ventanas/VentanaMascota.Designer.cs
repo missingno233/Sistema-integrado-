@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaMascota));
             toolStrip1 = new ToolStrip();
             TSB_Crear = new ToolStripButton();
             TSB_Consulta = new ToolStripButton();
@@ -40,6 +41,7 @@
             Raza = new DataGridViewTextBoxColumn();
             Edad = new DataGridViewTextBoxColumn();
             Peso = new DataGridViewTextBoxColumn();
+            TSB_Cita = new ToolStripButton();
             toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DGVMascotas).BeginInit();
             SuspendLayout();
@@ -48,7 +50,7 @@
             // 
             toolStrip1.BackColor = Color.Transparent;
             toolStrip1.Font = new Font("Segoe UI", 15.75F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            toolStrip1.Items.AddRange(new ToolStripItem[] { TSB_Crear, TSB_Consulta, TSB_Editar, TSB_Eliminar, TSB_BuscarMascotas });
+            toolStrip1.Items.AddRange(new ToolStripItem[] { TSB_Crear, TSB_Consulta, TSB_Editar, TSB_Eliminar, TSB_BuscarMascotas, TSB_Cita });
             toolStrip1.Location = new Point(0, 0);
             toolStrip1.Name = "toolStrip1";
             toolStrip1.Size = new Size(854, 37);
@@ -135,6 +137,15 @@
             Peso.HeaderText = "Peso";
             Peso.Name = "Peso";
             // 
+            // TSB_Cita
+            // 
+            TSB_Cita.Image = Properties.Resources.cita;
+            TSB_Cita.ImageTransparentColor = Color.Magenta;
+            TSB_Cita.Name = "TSB_Cita";
+            TSB_Cita.Size = new Size(69, 34);
+            TSB_Cita.Text = "Cita";
+            TSB_Cita.Click += TSB_Cita_Click;
+            // 
             // VentanaMascota
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -142,6 +153,7 @@
             ClientSize = new Size(854, 516);
             Controls.Add(DGVMascotas);
             Controls.Add(toolStrip1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "VentanaMascota";
             Text = "Mascotas";
             toolStrip1.ResumeLayout(false);
@@ -165,5 +177,6 @@
         private DataGridViewTextBoxColumn Raza;
         private DataGridViewTextBoxColumn Edad;
         private DataGridViewTextBoxColumn Peso;
+        private ToolStripButton TSB_Cita;
     }
 }
