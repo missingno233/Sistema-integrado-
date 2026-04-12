@@ -10,10 +10,15 @@ namespace Sistema_integrado.Models
     {
         public String Nombre { get; set; }
         public String Especie { get; set; }
+        public String Tratamiento { get; set; }
+        public String Motivo { get; set; }
+        public String Diagnostico { get; set; }
+
         public String Raza { get; set; }
+        public String consulta { get; set; }
+        public DateTime Fecha { get; set; }
         public int Edad { get; set; }
         public double Peso { get; set; }
-        public string consulta { get; set; }
 
     }
 }

@@ -21,18 +21,6 @@ namespace Sistema_integrado
             VentanaCrearEditar ventana = new VentanaCrearEditar(false, paciente);
             ventana.ShowDialog();
 
-            consulta = "INSERT INTO [dbo].[Mascotas] \r\n " +
-                "([Nombre]\r\n" +
-                ",[Especie\r\n" +
-                ",[Raza]\r\n" +
-                ",[Edad]\r\n" +
-                ",[Peso])\r\n " +
-                "VALUES\r\n" +
-                "(@Nombre\r\n" +
-                ",@Especie\r\n" +
-                ",@Raza\r\n" +
-                ",@Edad\r\n" +
-                ",@Peso)\r\n";
             var parametros = new List<SqlParameter>
             {
                 new ("@Nombre", paciente.Nombre),
@@ -42,7 +30,7 @@ namespace Sistema_integrado
                 new ("@Peso", paciente.Peso)
             };
 
-            DataTable tabla = BD.Consultando(consulta, parametros);
+            DataTable tabla = BD.Consultando(paciente.consulta, parametros);
             DGVMascotas.DataSource = tabla;
 
             TSB_Consulta_Click(sender, e);
@@ -67,13 +55,6 @@ namespace Sistema_integrado
                 VentanaCrearEditar ventana = new(true, paciente);
                 ventana.ShowDialog();
 
-                consulta = "UPDATE Pacientes " +
-                    "SET Nombre = @Nombre" +
-                    ", Especie = @Especie" +
-                    ", Raza = @Raza" +
-                    ", Edad = @Edad" +
-                    ", Peso = @Peso" +
-                    "WHERE Id = @Id; ";
 
                 var parametros = new List<SqlParameter>
                 {
@@ -84,8 +65,10 @@ namespace Sistema_integrado
                     new("@Edad", paciente.Edad),
                     new("@Peso", paciente.Peso),
                 };
-                DataTable tabla = BD.Consultando(consulta, parametros);
+                DataTable tabla = BD.Consultando(paciente.consulta, parametros);
                 DGVMascotas.DataSource = tabla;
+
+                TSB_Consulta_Click(sender, e);
             }
             else
             {
@@ -93,21 +76,30 @@ namespace Sistema_integrado
                     , "Atención", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            TSB_Consulta_Click(sender, e);
 
 
         }
 
         private void TSB_Eliminar_Click(object sender, EventArgs e)
         {
-            consulta = "DELETE FROM Mascotas WHERE id = @id";
-
 
             if (DGVMascotas.SelectedRows != null &&
                 DGVMascotas.SelectedRows.Count > 0)
             {
+                consulta = "DELETE FROM Mascotas WHERE id = @id";
+
                 idseleccionado = Convert.ToInt32(DGVMascotas.
                     SelectedRows[0].Cells[0].Value);
+
+                var parametros = new List<SqlParameter>
+                {
+                    new SqlParameter("@id", idseleccionado)
+                };
+
+                DataTable tabla = BD.Consultando(consulta, parametros);
+                DGVMascotas.DataSource = tabla;
+
+                TSB_Consulta_Click(sender, e);
             }
             else
             {
@@ -116,15 +108,6 @@ namespace Sistema_integrado
                 return;
             }
 
-            var parametros = new List<SqlParameter>
-            {
-                new SqlParameter("@id", idseleccionado)
-            };
-
-            DataTable tabla = BD.Consultando(consulta, parametros);
-            DGVMascotas.DataSource = tabla;
-
-            TSB_Consulta_Click(sender, e);
         }
 
         private void TSB_BuscarMascotas_Click(object sender, EventArgs e)
@@ -147,8 +130,6 @@ namespace Sistema_integrado
             this.Close();
             ventana.FormClosed += (s, args) => this.Show();
             ventana.Show();
-
-
         }
     }
 }

@@ -218,7 +218,7 @@ namespace Sistema_integrado.Ventanas
             }
             this.Close();
         }
-
+        
         private bool ValidarCampos(out string mensajeError)
         {
             mensajeError = string.Empty;
@@ -312,18 +312,14 @@ namespace Sistema_integrado.Ventanas
 
                     if (ValidarCampos(out string mensajeError))
                     {
-                        elias.consulta = "INSERT INTO Pacientes " +
-                            "(Nombre" +
-                            ", Raza" +
-                            ", Especie" +
-                            ", Peso" +
-                            ", Edad) " +
-                            "VALUES " +
-                            "(@Nombre" +
-                            ", @Raza" +
-                            ", @Especie" +
-                            ", @Peso" +
-                            ", @Edad)";
+                        elias.consulta = "UPDATE Pacientes\r\n" +
+                            "SET Nombre = @Nombre,\r\n    " +
+                            "Especie = @Especie,\r\n    " +
+                            "Raza = @Raza,\r\n    " +
+                            "Edad = @Edad,\r\n    " +
+                            "Peso = @Peso,\r\n    " +
+                            "Tutor = @Tutor\r\n" +
+                            "WHERE Id = @Id;";
 
                         elias.Nombre = txtNombre.Text.Trim();
                         elias.Raza = txtRaza.Text.Trim();

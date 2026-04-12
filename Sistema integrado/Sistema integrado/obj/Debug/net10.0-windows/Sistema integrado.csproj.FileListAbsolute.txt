@@ -118,3 +118,5 @@ C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\S
 C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema integrado.genruntimeconfig.cache
 C:\Users\gaelg\OneDrive\Documentos\GitHub\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\ref\Sistema integrado.dll
 C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.Ventanas.VentanaBuscar.resources
+C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.Ventanas.VentanaCita.resources
+C:\Users\missi\OneDrive\Escritorio\mamadas\Sistema-integrado-\Sistema integrado\Sistema integrado\obj\Debug\net10.0-windows\Sistema_integrado.Ventanas.VentanaCrearEditarCita.resources
