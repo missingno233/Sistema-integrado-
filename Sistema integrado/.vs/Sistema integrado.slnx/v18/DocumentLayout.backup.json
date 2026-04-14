@@ -7,16 +7,16 @@
       "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\ventanas\\ventanacreareditarcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\missi\\onedrive\\escritorio\\mamadas\\sistema-integrado-\\sistema integrado\\sistema integrado\\ventanas\\ventanacita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\ventanas\\ventanacita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\missi\\onedrive\\escritorio\\mamadas\\sistema-integrado-\\sistema integrado\\sistema integrado\\ventanas\\ventanacreareditarcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\ventanas\\ventanacreareditarcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\missi\\onedrive\\escritorio\\mamadas\\sistema-integrado-\\sistema integrado\\sistema integrado\\ventanas\\ventanacita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|C:\\Users\\missi\\OneDrive\\Escritorio\\mamadas\\Sistema-integrado-\\Sistema integrado\\sistema integrado\\ventanas\\ventanacita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\ventanas\\ventanacita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\missi\\onedrive\\escritorio\\mamadas\\sistema-integrado-\\sistema integrado\\sistema integrado\\ventanas\\ventanacreareditarcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\ventanas\\ventanacreareditarcita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\missi\\onedrive\\escritorio\\mamadas\\sistema-integrado-\\sistema integrado\\sistema integrado\\ventanas\\ventanacita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|solutionrelative:sistema integrado\\ventanas\\ventanacita.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1BEE512B-FBF3-7DD5-6807-FD4E5889555B}|Sistema integrado\\Sistema integrado.csproj|c:\\users\\missi\\onedrive\\escritorio\\mamadas\\sistema-integrado-\\sistema integrado\\sistema integrado\\ventanas\\ventanacreareditar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,8 +58,7 @@
               "RelativeToolTip": "Sistema integrado\\Ventanas\\VentanaCita.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-11T05:21:32.294Z",
-              "IsPinned": true,
-              "EditorCaption": " [Dise\u00F1o]"
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -71,8 +70,7 @@
               "RelativeToolTip": "Sistema integrado\\Ventanas\\VentanaCrearEditar.cs",
               "ViewState": "AgIAACoBAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T04:14:51.759Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-12T04:14:51.759Z"
             },
             {
               "$type": "Document",
@@ -84,21 +82,19 @@
               "RelativeToolTip": "Sistema integrado\\Ventanas\\VentanaMascota.cs",
               "ViewState": "AgIAAGYAAAAAAAAAAAAkwH4AAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T03:07:39.268Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-12T03:07:39.268Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "VentanaCita.cs",
               "DocumentMoniker": "C:\\Users\\missi\\OneDrive\\Escritorio\\mamadas\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaCita.cs",
               "RelativeDocumentMoniker": "Sistema integrado\\Ventanas\\VentanaCita.cs",
               "ToolTip": "C:\\Users\\missi\\OneDrive\\Escritorio\\mamadas\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaCita.cs",
               "RelativeToolTip": "Sistema integrado\\Ventanas\\VentanaCita.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAYwEUAAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAYwB4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T03:01:18.653Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-12T03:01:18.653Z"
             },
             {
               "$type": "Document",
@@ -115,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "VentanaCrearEditarCita.cs [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\missi\\OneDrive\\Escritorio\\mamadas\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaCrearEditarCita.cs",
               "RelativeDocumentMoniker": "Sistema integrado\\Ventanas\\VentanaCrearEditarCita.cs",
@@ -133,7 +129,7 @@
               "RelativeDocumentMoniker": "Sistema integrado\\Ventanas\\VentanaCrearEditarCita.Designer.cs",
               "ToolTip": "C:\\Users\\missi\\OneDrive\\Escritorio\\mamadas\\Sistema-integrado-\\Sistema integrado\\Sistema integrado\\Ventanas\\VentanaCrearEditarCita.Designer.cs",
               "RelativeToolTip": "Sistema integrado\\Ventanas\\VentanaCrearEditarCita.Designer.cs",
-              "ViewState": "AgIAAH0AAAAAAAAAAAAYwIoAAAA/AAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAYwBYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-12T02:58:00.165Z",
               "EditorCaption": ""
@@ -148,8 +144,7 @@
               "RelativeToolTip": "Sistema integrado\\Ventanas\\VentanaTutores.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwCUAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-12T01:57:55.792Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-12T01:57:55.792Z"
             },
             {
               "$type": "Document",

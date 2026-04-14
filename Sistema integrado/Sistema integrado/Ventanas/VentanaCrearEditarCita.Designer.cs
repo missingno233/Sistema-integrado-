@@ -38,6 +38,7 @@
             label1 = new Label();
             BTN_AceptarEdicion = new Button();
             lblEdicion = new Label();
+            dateTimePicker1 = new DateTimePicker();
             SuspendLayout();
             // 
             // txtNombrePaciente
@@ -47,7 +48,7 @@
             txtNombrePaciente.Margin = new Padding(4);
             txtNombrePaciente.Name = "txtNombrePaciente";
             txtNombrePaciente.PlaceholderText = "Paciente";
-            txtNombrePaciente.Size = new Size(362, 29);
+            txtNombrePaciente.Size = new Size(181, 29);
             txtNombrePaciente.TabIndex = 0;
             // 
             // txtMotivo
@@ -98,7 +99,7 @@
             btnAceptar.Name = "btnAceptar";
             btnAceptar.Size = new Size(112, 59);
             btnAceptar.TabIndex = 9;
-            btnAceptar.Text = "Aceptar";
+            btnAceptar.Text = "Guardar";
             btnAceptar.UseVisualStyleBackColor = true;
             btnAceptar.Click += btnAceptar_Click;
             // 
@@ -138,11 +139,20 @@
             lblEdicion.TabIndex = 13;
             lblEdicion.Text = "Modifique los datos de la cita";
             // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Format = DateTimePickerFormat.Time;
+            dateTimePicker1.Location = new Point(471, 75);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(174, 29);
+            dateTimePicker1.TabIndex = 14;
+            // 
             // VentanaCrearEditarCita
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(658, 325);
+            Controls.Add(dateTimePicker1);
             Controls.Add(lblEdicion);
             Controls.Add(BTN_AceptarEdicion);
             Controls.Add(label1);
@@ -173,5 +183,6 @@
         private Label label1;
         private Button BTN_AceptarEdicion;
         private Label lblEdicion;
+        private DateTimePicker dateTimePicker1;
     } 
 }
