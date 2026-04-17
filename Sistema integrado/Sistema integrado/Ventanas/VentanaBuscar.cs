@@ -39,6 +39,9 @@ namespace Sistema_integrado.Ventanas
             Paciente p = new();
             Tutor t = new();
 
+            p.Nombre = txtBuscar.Text.Trim();
+            t.Nombre = txtBuscar.Text.Trim();
+
             switch (tipo)
             {
                 default:
@@ -58,20 +61,17 @@ namespace Sistema_integrado.Ventanas
         public void cargarPaciente()
         {
             lblPaciente.Visible = true;
-            txtBuscarPaciente.Visible = true;
         }
 
         public void cargarTutor()
         {
             lblTutores.Visible = true;
-            txtBuscarTutor.Visible = true;
         }
 
 
         public void paginaPredeterminada()
         {
-            txtBuscarPaciente.Visible = false;
-            txtBuscarTutor.Visible = false;
+            txtBuscar.Visible = false;
             lblPaciente.Visible = false;
             lblTutores.Visible = false;
         }

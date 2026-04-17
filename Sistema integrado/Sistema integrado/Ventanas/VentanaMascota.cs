@@ -91,15 +91,24 @@ namespace Sistema_integrado
                 idseleccionado = Convert.ToInt32(DGVMascotas.
                     SelectedRows[0].Cells[0].Value);
 
-                var parametros = new List<SqlParameter>
+                if (MessageBox.Show("¿Está seguro de eliminar el registro seleccionado?", "Confirmar eliminación",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    new SqlParameter("@id", idseleccionado)
-                };
+                    var parametros = new List<SqlParameter>
+                    {
+                        new SqlParameter("@id", idseleccionado)
+                    };
 
-                DataTable tabla = BD.Consultando(consulta, parametros);
-                DGVMascotas.DataSource = tabla;
 
-                TSB_Consulta_Click(sender, e);
+                    BD.Consultando(consulta, parametros);
+                    TSB_Consulta_Click(sender, e);
+
+                }
+                else
+                {
+                    MessageBox.Show("El registro no ha sido eliminado.", "Eliminación cancelada",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else
             {
@@ -118,7 +127,13 @@ namespace Sistema_integrado
             buscar.Show();
 
 
-            DataTable tablita = BD.Consultando(pat.consulta);
+            var parametros = new List<SqlParameter>
+            {
+                new SqlParameter("@Nombre", pat.Nombre)
+            };
+
+
+            DataTable tablita = BD.Consultando(pat.consulta, parametros);
             DGVMascotas.DataSource = tablita;
 
             TSB_Consulta_Click(sender, e);
@@ -127,7 +142,7 @@ namespace Sistema_integrado
         private void TSB_Cita_Click(object sender, EventArgs e)
         {
             VentanaCita ventana = new VentanaCita();
-            this.Close();
+            this.Hide();
             ventana.FormClosed += (s, args) => this.Show();
             ventana.Show();
         }

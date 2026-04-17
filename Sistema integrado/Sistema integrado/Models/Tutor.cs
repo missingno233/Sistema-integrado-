@@ -12,5 +12,7 @@ namespace Sistema_integrado.Models
         public string Direccion { get; set; }
         public string consulta{ get; set; }
         public string Mascota { get; set; }
+        public DateTime Fecha { get; set; }
+
     }
 }

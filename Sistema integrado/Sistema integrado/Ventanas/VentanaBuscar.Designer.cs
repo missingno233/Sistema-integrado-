@@ -29,20 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VentanaBuscar));
-            txtBuscarPaciente = new TextBox();
+            txtBuscar = new TextBox();
             button1 = new Button();
             lblPaciente = new Label();
             lblTutores = new Label();
-            txtBuscarTutor = new TextBox();
             label1 = new Label();
             SuspendLayout();
             // 
-            // txtBuscarPaciente
+            // txtBuscar
             // 
-            txtBuscarPaciente.Location = new Point(126, 52);
-            txtBuscarPaciente.Name = "txtBuscarPaciente";
-            txtBuscarPaciente.Size = new Size(165, 23);
-            txtBuscarPaciente.TabIndex = 0;
+            txtBuscar.Location = new Point(126, 52);
+            txtBuscar.Name = "txtBuscar";
+            txtBuscar.Size = new Size(165, 23);
+            txtBuscar.TabIndex = 0;
             // 
             // button1
             // 
@@ -75,13 +74,6 @@
             lblTutores.TabIndex = 3;
             lblTutores.Text = "Tutor:";
             // 
-            // txtBuscarTutor
-            // 
-            txtBuscarTutor.Location = new Point(126, 52);
-            txtBuscarTutor.Name = "txtBuscarTutor";
-            txtBuscarTutor.Size = new Size(165, 23);
-            txtBuscarTutor.TabIndex = 4;
-            // 
             // label1
             // 
             label1.AutoSize = true;
@@ -98,11 +90,10 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(385, 161);
             Controls.Add(label1);
-            Controls.Add(txtBuscarTutor);
             Controls.Add(lblTutores);
             Controls.Add(lblPaciente);
             Controls.Add(button1);
-            Controls.Add(txtBuscarPaciente);
+            Controls.Add(txtBuscar);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "VentanaBuscar";
             Text = "Buscar";
@@ -112,11 +103,10 @@
 
         #endregion
 
-        private TextBox txtBuscarPaciente;
+        private TextBox txtBuscar;
         private Button button1;
         private Label lblPaciente;
         private Label lblTutores;
-        private TextBox txtBuscarTutor;
         private Label label1;
     }
 }

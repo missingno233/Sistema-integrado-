@@ -38,7 +38,7 @@
             label1 = new Label();
             BTN_AceptarEdicion = new Button();
             lblEdicion = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            DTP_Hora = new DateTimePicker();
             SuspendLayout();
             // 
             // txtNombrePaciente
@@ -139,20 +139,20 @@
             lblEdicion.TabIndex = 13;
             lblEdicion.Text = "Modifique los datos de la cita";
             // 
-            // dateTimePicker1
+            // DTP_Hora
             // 
-            dateTimePicker1.Format = DateTimePickerFormat.Time;
-            dateTimePicker1.Location = new Point(471, 75);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(174, 29);
-            dateTimePicker1.TabIndex = 14;
+            DTP_Hora.Format = DateTimePickerFormat.Time;
+            DTP_Hora.Location = new Point(471, 75);
+            DTP_Hora.Name = "DTP_Hora";
+            DTP_Hora.Size = new Size(174, 29);
+            DTP_Hora.TabIndex = 14;
             // 
             // VentanaCrearEditarCita
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(658, 325);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(DTP_Hora);
             Controls.Add(lblEdicion);
             Controls.Add(BTN_AceptarEdicion);
             Controls.Add(label1);
@@ -183,6 +183,6 @@
         private Label label1;
         private Button BTN_AceptarEdicion;
         private Label lblEdicion;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker DTP_Hora;
     } 
 }

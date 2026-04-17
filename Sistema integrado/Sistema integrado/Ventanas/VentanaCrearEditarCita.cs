@@ -63,7 +63,7 @@ namespace Sistema_integrado.Ventanas
         {
             // Validar ambos
             bool camposValidos = ValidarCampos(out string mensajeError);
-            bool fechaValida = EsFechaValida(out string mensajeFecha);
+            bool fechaValida = EsFechaHoraValida(out string mensajeFecha);
 
             if (camposValidos && fechaValida)
             {
@@ -80,13 +80,19 @@ namespace Sistema_integrado.Ventanas
                     ", @Diagnostico" +
                     ", @Tratamiento);";
 
-                  
+                DateTime fechaHoraCita = Calendario.SelectionStart.Date + DTP_Hora.Value.TimeOfDay;
+
                 pat.Nombre = txtNombrePaciente.Text.Trim();
                 pat.Motivo = txtMotivo.Text.Trim();
-                pat.Fecha = Calendario.SelectionStart;
+                pat.Fecha = fechaHoraCita;
                 pat.Diagnostico = txtDiagnositco.Text.Trim();
                 pat.Tratamiento = txtTratamiento.Text.Trim();
 
+                MessageBox.Show($"Nombre = {pat.Nombre} \n" +
+                    $"Motivo = {pat.Motivo}\n" +
+                    $"Fecha = {pat.Fecha}\n" +
+                    $"Diagnostico = {pat.Diagnostico}\n" +
+                    $"Tratamiento = {pat.Tratamiento}\n");
 
                 MessageBox.Show("Guardado correctamente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 this.DialogResult = DialogResult.OK;  
@@ -131,26 +137,37 @@ namespace Sistema_integrado.Ventanas
             return true;
         }
 
-        private bool EsFechaValida(out string mensajeFecha)
+        private bool EsFechaHoraValida(out string mensaje)
         {
-            mensajeFecha = string.Empty;
+            mensaje = string.Empty;
             DateTime fecha = Calendario.SelectionStart;
 
+            // Validar que se haya seleccionado una fecha
             if (fecha == DateTime.MinValue)
             {
-                mensajeFecha = "No se ha seleccionado ninguna fecha";
+                mensaje = "No se ha seleccionado ninguna fecha.";
                 return false;
             }
 
 
-            if (fecha > DateTime.Today)
+            DateTime fechaHoraCita = fecha.Date + DTP_Hora.Value.TimeOfDay;
+
+            if (fechaHoraCita <= DateTime.Now)
             {
-                mensajeFecha = "La fecha no puede ser posterior a hoy";
+                mensaje = "La fecha y hora de la cita debe ser posterior al momento actual.";
                 return false;
             }
-            if (fecha < DateTime.Today.AddYears(-30))
+
+            if (fechaHoraCita > DateTime.Today.AddYears(1))
             {
-                mensajeFecha = "La fecha es demasiado antigua (más de 30 años)";
+                mensaje = "No se pueden agendar citas con más de un año de anticipación.";
+                return false;
+            }
+
+            TimeSpan horaCita = DTP_Hora.Value.TimeOfDay;
+            if (horaCita < TimeSpan.FromHours(8) || horaCita > TimeSpan.FromHours(18))
+            {
+                mensaje = "El horario de citas es de 08:00 a 18:00.";
                 return false;
             }
 

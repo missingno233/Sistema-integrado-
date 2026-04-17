@@ -115,14 +115,25 @@ namespace Sistema_integrado.Ventanas
                 idseleccionado = Convert.ToInt32(DGVTutores.
                     SelectedRows[0].Cells[0].Value);
 
-                var parametros = new List<SqlParameter>
+                
+                if (MessageBox.Show("¿Está seguro de eliminar el registro seleccionado?", "Confirmar eliminación",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                 {
-                    new SqlParameter("@id", idseleccionado)
-                };
+                    var parametros = new List<SqlParameter>
+                    {
+                        new SqlParameter("@id", idseleccionado)
+                    };
 
 
-                BD.Consultando(consulta, parametros);
-                TSB_Consulta_Click(sender, e);
+                    BD.Consultando(consulta, parametros);
+                    TSB_Consulta_Click(sender, e);
+
+                }
+                else
+                {
+                    MessageBox.Show("El registro no ha sido eliminado.", "Eliminación cancelada",
+                        MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
             }
             else
             {
@@ -137,9 +148,14 @@ namespace Sistema_integrado.Ventanas
         {
             Tutor tutor = new Tutor();
             VentanaBuscar buscar = new(tutor);
+            this.Hide();
             buscar.FormClosed += (s, args) => this.Show();
             buscar.Show();
 
+            var parametros = new List<SqlParameter>
+            {
+                new SqlParameter("@Nombre", tutor.Nombre)
+            };
 
             DataTable tablita = BD.Consultando(tutor.consulta);
             DGVTutores.DataSource = tablita;
@@ -149,7 +165,7 @@ namespace Sistema_integrado.Ventanas
         private void TSB_Cita_Click(object sender, EventArgs e)
         {
             VentanaCita ventana = new();
-            this.Close();
+            this.Hide();
             ventana.FormClosed += (s, args) => this.Show();
             ventana.Show();
         }
